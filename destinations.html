@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Travel</title>
+    <style>
+        body {
+            font-family: 'Helvetica', sans-serif;
+            margin: 200px;
+            padding: 0;
+            overflow: hidden; /* Prevent video overflow */
+        }
+        #video-background {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1; /* Place video behind other elements */
+        }
+        .container {
+            position: relative;
+            z-index: 1; /* Bring other elements above video */
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            
+        }
+        h1, h2 {
+            color: #333;
+			text-align: center;
+        }
+        h2 {
+            color: #555;
+			text-align: center;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input[type="text"], input[type="date"] {
+            width: calc(100% - 30px);
+            padding: 15px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-size: 16px;
+            color: #000;
+			text-align: center;
+        }
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 10px;
+            display: inline-block;
+			text-align: center;
+        }
+        label {
+            display: inline-block;
+            margin-bottom: 15px;
+            font-size: 18px;
+            color: #333;
+			text-align: center;
+        }
+        input[type="submit"] {
+            background-color: #4285f4; /* Google Blue */
+            color: white;
+            padding: 15px 25px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            animation: bounce-glow 1s infinite alternate, pulse 1s infinite alternate;
+            transition: background-color 0.3s ease-in-out;
+			text-align: center;
+        }
+        input[type="submit"]:hover {
+            background-color: #0066cc; /* Google Dark Blue */
+            animation: bounce-hover 0.5s infinite alternate, pulse-hover 0.5s infinite alternate;
+			text-align: center;
+        }
+
+        @keyframes bounce-glow {
+            0% {
+                transform: translateY(0);
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0);
+            }
+            100% {
+                transform: translateY(-10px);
+                box-shadow: 0 0 20px rgba(66, 133, 244, 0.7);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.05);
+            }
+        }
+
+        @keyframes bounce-hover {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-5px);
+            }
+        }
+
+        @keyframes pulse-hover {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <video id="video-background" autoplay muted loop>
+        <source src="Y2meta.app-Asia _ Raw Beauty - 8K HDR UltraHD (120 FPS)-(1080p60).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+	
+    <div class="container">
+        <h1>Luxury Travel Experience</h1>
+        
+		<form action="/book-flight" method="post">
+            <label for="departure"><b>Departure:</b></label>
+            <input type="text" id="departure" name="departure" placeholder="Enter Departure City" list="departure-list">
+            <!-- Datalist for autocomplete suggestions -->
+            <datalist id="departure-list">
+                <option value="delhi">Delhi</option>
+                <option value="mumbai">Mumbai</option>
+                <option value="kolkata">Kolkata</option>
+                <option value="chennai">Chennai</option>
+                <option value="bangalore">Bangalore</option>
+                <option value="hyderabad">Hyderabad</option>
+                <option value="ahmedabad">Ahmedabad</option>
+                <option value="pune">Pune</option>
+                <option value="surat">Surat</option>
+                <option value="jaipur">Jaipur</option>
+                <option value="lucknow">Lucknow</option>
+                <option value="kanpur">Kanpur</option>
+                <option value="nagpur">Nagpur</option>
+                <option value="indore">Indore</option>
+                <option value="thane">Thane</option>
+                <option value="bhopal">Bhopal</option>
+                <option value="visakhapatnam">Visakhapatnam</option>
+                <option value="vadodara">Vadodara</option>
+                <option value="patna">Patna</option>
+                <option value="ghaziabad">Ghaziabad</option>
+                <option value="ludhiana">Ludhiana</option>
+                <option value="agra">Agra</option>
+                <option value="nashik">Nashik</option>
+                <option value="faridabad">Faridabad</option>
+                <option value="meerut">Meerut</option>
+                <option value="rajkot">Rajkot</option>
+                <option value="varanasi">Varanasi</option>
+                <option value="srinagar">Srinagar</option>
+                <option value="aurangabad">Aurangabad</option>
+                <!-- Add more options as needed -->
+            </datalist><br>
+
+            <label for="destination"><b>Destination:</b></label>
+            <input type="text" id="destination" name="destination" placeholder="Enter Destination City" list="destination-list">
+            <!-- Datalist for autocomplete suggestions -->
+            <datalist id="destination-list">
+                <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 50 World Cities</title>
+</head>
+<body>
+
+<label for="cities">Select a city:</label>
+<select id="cities" name="cities">
+    <option value="new-york">New York</option>
+    <option value="tokyo">Tokyo</option>
+    <option value="london">London</option>
+    <option value="paris">Paris</option>
+    <option value="beijing">Beijing</option>
+    <option value="rio-de-janeiro">Rio de Janeiro</option>
+    <option value="dubai">Dubai</option>
+    <option value="sydney">Sydney</option>
+    <option value="mexico-city">Mexico City</option>
+    <option value="cape-town">Cape Town</option>
+    <option value="toronto">Toronto</option>
+    <option value="mumbai">Mumbai</option>
+    <option value="shanghai">Shanghai</option>
+    <option value="berlin">Berlin</option>
+    <option value="moscow">Moscow</option>
+    <option value="istanbul">Istanbul</option>
+    <option value="cairo">Cairo</option>
+    <option value="sao-paulo">Sao Paulo</option>
+    <option value="delhi">Delhi</option>
+    <option value="bangkok">Bangkok</option>
+    <option value="johannesburg">Johannesburg</option>
+    <option value="los-angeles">Los Angeles</option>
+    <option value="chicago">Chicago</option>
+    <option value="rome">Rome</option>
+    <option value="sydney">Sydney</option>
+    <option value="vancouver">Vancouver</option>
+    <option value="auckland">Auckland</option>
+    <option value="cairo">Cairo</option>
+    <option value="dublin">Dublin</option>
+    <option value="amsterdam">Amsterdam</option>
+    <option value="hong-kong">Hong Kong</option>
+    <option value="seoul">Seoul</option>
+    <option value="singapore">Singapore</option>
+    <option value="miami">Miami</option>
+    <option value="san-francisco">San Francisco</option>
+    <option value="madrid">Madrid</option>
+    <option value="lisbon">Lisbon</option>
+    <option value="athens">Athens</option>
+    <option value="buenos-aires">Buenos Aires</option>
+    <option value="cairo">Cairo</option>
+    <option value="nairobi">Nairobi</option>
+    <option value="jakarta">Jakarta</option>
+    <option value="manila">Manila</option>
+    <option value="hanoi">Hanoi</option>
+    <option value="tehran">Tehran</option>
+    <option value="lakshaydweep">Lakshaydweep</option>
+</select>
+
+</body>
+</html>
+
+                <!-- Add more options as needed -->
+            </datalist><br>
+
+            <label for="departure-date"><b>Departure Date:</b></label>
+            <input type="date" id="departure-date" name="departure-date"><br><br>
+
+            <center><input type="submit" value="Book Flight"></center>
+        </form>
+    </div>
+</body>
+</html>

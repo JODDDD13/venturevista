@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VentureVistaDubai</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-6EXSI4vzj9Rk9xGvPmyLoMQ1Rx2iVtf6Pf+t57itig0hC9zGNR8noq4+fnZpSyo3uhFWw3FZMvCXTuHG5V5y1Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 5px auto;
+            padding: 0px;
+            background-color: #404040;
+            color: #fff;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+			margin: 20px auto;
+			max-width: 1400px;
+			border-radius: 15px;
+			box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        section {
+            max-width: 1400px;
+            margin: 20px auto;
+            padding: 30px;
+            background-color: #333;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #ffd700;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #bbb;
+        }
+
+        .highlight {
+            color: #FFC107;
+            font-weight: bold;
+        }
+
+        img {
+            max-width: 73%;
+            height: auto;
+            border-radius: 15px;
+            margin-top: 2px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+		    display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .package {
+            margin-top: 30px;
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+			
+        }
+
+        .package img {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .package:hover img {
+            transform: scale(1.05);
+        }
+
+        .package-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .package:hover .package-overlay {
+            opacity: 1;
+        }
+
+        .package-overlay h3 {
+            color: #ffd700;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-bottom: 30px;
+        }
+
+        .package-overlay p {
+            color: #fff;
+            font-size: 18px;
+        }
+
+        .dot-container {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .dot {
+            height: 10px;
+            width: 10px;
+            margin: 0 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+            cursor: pointer;
+        }
+
+        .active {
+            background-color: #404040;
+        }
+
+        footer {
+            background-color: #404040;
+            color: #fff;
+            text-align: center;
+            padding: 15px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+		.intro {
+            border-radius: 10px; 
+            overflow: hidden;		
+		}
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Dubai</h1>
+    </header>
+
+    <div id="video" class="intro" data-ride="carousel">
+        <center><video id="video-background" width="73%" height="50%" autoplay muted loop controls>
+        <source src="D:\WD project\videoplayback.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video></center>
+        
+    </div>
+
+    <section>
+        <h2>Welcome to Dubai</h2>
+        <p>Treat yourself to the best of the best with our special tour packages.</p>
+        <p>Enjoy <span class="highlight">luxurious</span> accommodations, stunning views, and unforgettable experiences. </p>
+		<p>Take a trip that's all about ultimate comfort and create memories that you'll cherish forever.</p>
+    </section>
+
+    <section id="packages">
+        <h2>Featured Packages</h2>
+
+        <div class="row">
+		    <div class="col-md-6 mb-6">
+                <div class="package">
+                    <img src="401178353 sad.jpg" alt="Economy Retreat" height="400" width="800">
+                    <div class="package-overlay">
+                        <h3>Economy Retreat</h3>
+                        <p>Our Economy Retreat package is all about giving you a taste of luxury without breaking the bank. Whether you're a seasoned traveler or just want a special escape, this package ensures a great experience that won't hurt your wallet.</p>
+                        <p><span class="highlight">$999</span> per person</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-6">
+                <div class="package">
+                    <img src="taj-exotica-resort-spa.jpg" alt="Premium Retreat" height="400" width="800">
+                    <div class="package-overlay">
+                        <h3>Premium Retreat</h3>
+                        <p>Experience pure luxury with our Premium Retreat package. Stay in lavish accommodations, enjoy private tours, and savor gourmet dining.</p>
+                        <p><span class="highlight">$2999</span> per person</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-6">
+                <div class="package">
+                    <img src="sad.jpg" alt="Exclusive Cruise" height="400" width="800">
+                    <div class="package-overlay">
+                        <h3>Exclusive Cruise</h3>
+                        <p>Sail in style with our Exclusive Cruise package. Discover exotic destinations, unwind in elegant cabins, and enjoy personalized services.</p>
+                        <p><span class="highlight">$4999</span> per person</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 mb-6">
+                <div class="package">
+                    <img src="445419839.jpg" alt="Royal Expedition" height="400" width="800">
+                    <div class="package-overlay">
+                        <h3>Royal Expedition</h3>
+                        <p>Embark on a Royal Expedition with our most luxurious package. Explore iconic landmarks, stay in palatial suites, and enjoy VIP experiences.</p>
+                        <p><span class="highlight">$7999</span> per person</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	
+    <footer>
+        &copy; 2024 Opulent Escapes
+    </footer>
+</body>
+</html>

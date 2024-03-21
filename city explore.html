@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Explore</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #404040;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 10px;
+        }
+		
+
+		
+		.package {
+            margin-top: 20px;
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+			height: 480px;
+            width: 640px;
+			
+        }
+
+        .package img {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .package:hover img {
+            transform: scale(1.05);
+        }
+
+        .package-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .package:hover .package-overlay {
+            opacity: 1;
+        }
+
+        .package-overlay h3 {
+            color: #ffd700;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-bottom: 30px;
+        }
+
+        .package-overlay p {
+            color: #fff;
+            font-size: 18px;
+        }
+		
+		
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>City Explore</h1>
+    </header>
+
+    <section>
+        <div class="div">
+                <div class="package">
+                    <img src="640px-Liberty-statue-from-front2.jpg" alt="Economy Retreat">
+                    <div class="package-overlay">
+                        <h3>New York</h3>
+                    </div>
+                </div>
+            </div>
+			<div class="col-md-6 mb-6">
+                <div class="package">
+                    <img src="Eiffel_Tower_Paris_(138074701).jpg" alt="Economy Retreat">
+                    <div class="package-overlay">
+                        <h3>Paris</h3>
+                    </div>
+                </div>
+            </div>
+			<div class="col-md-6 mb-6">
+                <div class="package">
+                    <img src="tokyo_sensoji_temple12.webp" alt="Economy Retreat">
+                    <div class="package-overlay">
+                        <h3>Tokyo</h3>
+                    </div>
+                </div>
+            </div>
+			<div class="col-md-6 mb-6">
+                <a href="D:\WD project\mumbai.html"><div class="package">
+                    <img src="1470940672_original.jpg" alt="Economy Retreat">
+                    <div class="package-overlay">
+                        <h3>Mumbai</h3>
+                    </div>
+                </div>
+            </div>
+			<div class="col-md-6 mb-6">
+                <div class="package">
+                    <img src="640px-Big_Ben_and_Elizabeth_Tower_(8061986684).jpg" alt="Economy Retreat">
+                    <div class="package-overlay">
+                        <h3>London</h3>
+                    </div>
+                </div>
+            </div>
+			<div class="col-md-6 mb-6">
+                <a href="D:\WD project\dubai.html"><div class="package">
+                    <img src="df3172371e2d575dbabba20ba8af6aa1.jpg" alt="Economy Retreat">
+                    <div class="package-overlay">
+                        <h3>Dubai</h3>
+                    </div>
+                </div></a>
+            </div>
+			</section>
+</body>
+
+</html>

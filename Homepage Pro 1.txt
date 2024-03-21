@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Journeys</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+            padding-top: 56px;
+        }
+
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #333;
+        }
+
+        section {
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero {
+            background: url('hero-background.jpg') center/cover no-repeat;
+            color: #fff;
+            padding: 100px 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        .hero h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+
+        .hero .btn {
+            font-size: 1.5em;
+            padding: 20px 40px;
+        }
+
+        .destinations,
+        .packages {
+            background-color: #fff;
+            padding: 80px 0;
+        }
+
+        .destinations h2,
+        .packages h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .destination,
+        .package {
+            margin-bottom: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .destination img,
+        .package img {
+            max-width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .destination h3,
+        .package h3 {
+            font-size: 2em;
+            margin: 15px 0;
+        }
+
+        .destination p,
+        .package p {
+            font-size: 1.2em;
+            color: #555;
+            text-align: center;
+        }
+
+        .package span {
+            font-size: 1.5em;
+            color: #ff5e00;
+            margin-right: 5px;
+        }
+
+        .package .btn {
+            font-size: 1.5em;
+            padding: 20px 40px;
+        }
+
+        .contact {
+            background-color: #333;
+            color: #fff;
+            padding: 80px 0;
+        }
+
+        .contact h2 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1><center>Luxury Journeys</center></h1>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Welcome to Luxury Journeys</h2>
+            <p>Your extraordinary journey begins here.</p>
+            <a href="#packages" class="btn btn-warning btn-lg">Explore Packages</a>
+        </div>
+    </section>
+
+    <section id="destinations" class="destinations">
+        <div class="container">
+            <h2>Popular Destinations</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="destination">
+                        <img src="destination1.jpg" alt="City of Dreams" class="img-fluid rounded">
+                        <h3>City of Dreams</h3>
+                        <p>Experience the vibrant culture and nightlife.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="destination">
+                        <img src="destination2.jpg" alt="Paradise Island" class="img-fluid rounded">
+                        <h3>Paradise Island</h3>
+                        <p>Relax on pristine beaches and enjoy water activities.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more destinations as needed -->
+        </div>
+    </section>
+
+    <section id="packages" class="packages">
+        <div class="container">
+            <h2>Our Packages</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="package">
+                        <img src="package1.jpg" alt="City Explorer" class="img-fluid rounded">
+                        <h3>City Explorer</h3>
+                        <p>Discover the hidden gems of urban landscapes.</p>
+                        <span class="text-warning">$999</span>
+                        <a href="#" class="btn btn-warning btn-lg">Book Now</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="package">
+                        <img src="package2.jpg" alt="Nature Retreat" class="img-fluid rounded">
+                        <h3>Nature Retreat</h3>
+                        <p>Escape to serene locations surrounded by nature.</p>
+                        <span class="text-warning">$1299</span>
+                        <a href="#" class="btn btn-warning btn-lg">Book Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more packages as needed -->
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>Have questions or need assistance? Reach out to us!</p>
+            <!-- Add a contact form or contact information here -->
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Luxury Journeys. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
